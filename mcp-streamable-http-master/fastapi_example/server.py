@@ -18,7 +18,7 @@ app = FastAPI(lifespan=lifespan)
 app.mount("/echo", echo_mcp.streamable_http_app())
 app.mount("/math", math_mcp.streamable_http_app())
 
-PORT = os.environ.get("PORT", 10000)
+PORT = int(os.environ.get("PORT", 10000))
 
 if __name__ == "__main__":
     import uvicorn
