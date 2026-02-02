@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "sqlite": {
+      "command": "uvx",
+      "args": ["mcp-server-sqlite", "--db-path", "/Users/kshitijjoy_1/test.db"]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/kshitijjoy_1/Desktop",
+        "/Users/kshitijjoy_1/Downloads"
+      ]
+    },
+    "my-learning": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/Users/kshitijjoy_1/my-mcp/mcp-learning",
+        "run",
+        "learning.py"
+      ]
+    }
+  }
+}
